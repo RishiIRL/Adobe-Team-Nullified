@@ -233,8 +233,8 @@ def analyze_pdf_structure(pdf_path):
     return clean_text(title_text), final_outline
 
 def process_pdfs_in_directory():
-    input_dir = Path("./input")
-    output_dir = Path("./output")
+    input_dir = Path("/app/input")
+    output_dir = Path("/app/output")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     pdf_files = list(input_dir.glob("*.pdf"))
